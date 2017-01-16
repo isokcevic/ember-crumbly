@@ -78,9 +78,7 @@ export default Component.extend({
     const breadCrumbs = routeNames.map((path, index) => {
       const isLastRoute = index === routesLength - 1;
 
-      if (!!indexRoute && isLastRoute) {
-        path = indexRoute;
-      }
+
 
       const route = this._lookupRoute(path);
 
